@@ -51,3 +51,8 @@ def signup( request ):
         return redirect('login')
 
     return render(request, 'users/signup.html')
+
+
+
+def update_profile( request ):
+    return render(request, 'users/update_profile.html')
