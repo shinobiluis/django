@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block head_content %}
+    <title>Nuevo titulo</title>
+{% endblock %}
+
+{% block container %}
+    <div class="row">
+        {% for post in posts %}
+            <div class="col-lg-4 offset-lg-4">
+                {{ post.name }} -
+                {{ post.user }} -
+                {{ post.timestamp }}
+            </div>
+        {% endfor %}
+    </div>
+{% endblock  %}
